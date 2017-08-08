@@ -7,7 +7,7 @@ $ git clone https://github.com/jiecaoyu/pytorch-nin-cifar10.git
 $ cd pytorch-nin-cifar10
 $ mkdir data
 ```
-Then download the data from this link and uncompress it into the ```./data/``` directory. Now you can train the model by running
+Then download the data from [this link](https://drive.google.com/open?id=0B-7I62GOSnZ8Z0ZCVXFtVnFEaTg) and uncompress it into the ```./data/``` directory. Now you can train the model by running
 ```bash
 $ python original.py
 ```
