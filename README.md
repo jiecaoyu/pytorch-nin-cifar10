@@ -1,5 +1,5 @@
 # pytorch-nin-cifar10
-pytorch implementation of network-in-network model on cifar10. All settings are base on the [network-in-network model in Caffe model zoo](https://gist.github.com/mavenlin/e56253735ef32c3c296d).
+pytorch implementation of network-in-network model on cifar10. All settings are base on the [network-in-network](https://gist.github.com/mavenlin/e56253735ef32c3c296d) model in Caffe model zoo.
 
 ## Instructions
 ```bash
