@@ -13,7 +13,7 @@ $ python original.py
 ```
 
 ## Accuracy
-By tweaking hyper-parameters, the model can reach the accuracy of 89.64%, which is better than other available implementations.
+By tweaking hyper-parameters, the model can reach the accuracy of 89.64%, which is better than other available Torch/PyTorch implementations.
 
 ## License
 The data used to train this model comes from http://www.cs.toronto.edu/~kriz/cifar.html Please follow the license there if used.
