@@ -25,7 +25,7 @@ classes = ('plane', 'car', 'bird', 'cat',
 class Net(nn.Module):
     def __init__(self):
         super(Net, self).__init__()
-        self.classifer = nn.Sequential(
+        self.classifier = nn.Sequential(
                 nn.Conv2d(3, 192, kernel_size=5, stride=1, padding=2),
                 nn.ReLU(inplace=True),
                 nn.Conv2d(192, 160, kernel_size=1, stride=1, padding=0),
@@ -55,7 +55,7 @@ class Net(nn.Module):
                 )
 
     def forward(self, x):
-        x = self.classifer(x)
+        x = self.classifier(x)
         x = x.view(x.size(0), 10)
         return x
 
@@ -91,10 +91,10 @@ params = []
 base_lr = 0.1
 
 for key, value in param_dict.items():
-    if key == 'classifer.20.weight':
+    if key == 'classifier.20.weight':
         params += [{'params':[value], 'lr':0.1 * base_lr, 
             'momentum':0.95, 'weight_decay':0.0001}]
-    elif key == 'classifer.20.bias':
+    elif key == 'classifier.20.bias':
         params += [{'params':[value], 'lr':0.1 * base_lr, 
             'momentum':0.95, 'weight_decay':0.0000}]
     elif 'weight' in key:
